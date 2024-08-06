@@ -71,7 +71,7 @@ const NewComment = ({
             }
           </>
         :
-          <a href="/users/sign_in" className="loginInfo">
+          <a href="/o_auths/1/start?reason=login" className="loginInfo">
             {I18n.t('post.new_comment.not_logged_in')}
           </a>
       }

@@ -33,7 +33,7 @@ const LikeButtonP = ({
       e.stopPropagation();
       
       if (isLoggedIn) handleLikeSubmit(postId, !liked, authenticityToken);
-      else window.location.href = `/users/sign_in`;
+      else window.location.href = `/o_auths/1/start?reason=login`;
       }}
       className={`likeButton${liked ? ' liked' : ''}`}
       hidden={!showLikeButton}

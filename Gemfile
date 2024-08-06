@@ -7,8 +7,6 @@ gem 'rake', '12.3.3'
 
 gem 'rails', '6.1.7.8'
 
-gem 'pg', '1.3.5'
-
 gem 'puma', '5.6.8'
 
 gem 'turbolinks', '5.2.1'
@@ -49,6 +47,8 @@ gem 'friendly_id', '5.5.1'
 
 # Billing
 gem 'stripe', '11.2.0'
+
+gem 'mysql2', '~> 0.5.3'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

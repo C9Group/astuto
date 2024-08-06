@@ -220,7 +220,7 @@ class NewPost extends React.Component<Props, State> {
               this.toggleForm();
               this.setState({ isSubmissionAnonymous: false });
             } else {
-              window.location.href = '/users/sign_in';
+              window.location.href = '/o_auths/1/start?reason=login';
             }
           }}
           className="submitBtn"

@@ -15,7 +15,7 @@ interface Props {
 const ActionBox = ({followed, submitFollow, isLoggedIn}: Props) => (
   <SidebarBox title={I18n.t('post.action_box.title')} customClass="actionBoxContainer">
     <Switch
-      onClick={isLoggedIn ? submitFollow : () => location.href = '/users/sign_in'}
+      onClick={isLoggedIn ? submitFollow : () => location.href = '/o_auths/1/start?reason=login'}
       label={I18n.t('post.action_box.follow_button')}
       checked={followed}
       htmlId="followSwitch"

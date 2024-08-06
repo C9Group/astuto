@@ -105,7 +105,7 @@
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to t('header.log_in'), @header_full_urls ? get_url_for(method(:new_user_session_url)) : new_user_session_path, class: 'nav-link' %>
+            <%= link_to t('header.log_in'), url_for(controller: 'o_auths', action: 'start', id: 1, reason: 'login', only_path: false), class: 'nav-link' %>
           </li>
         <% end %>
       </ul>

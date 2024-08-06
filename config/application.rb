@@ -14,6 +14,9 @@ module App
     # Set default locale
     config.i18n.default_locale = :en
 
+    config.action_controller.allow_forgery_protection = false
+    # config.action_dispatch.cookies_same_site_protection = :none
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading

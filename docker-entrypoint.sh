@@ -11,7 +11,7 @@ echo "Preparing database..."
 
 # Wait for database
 until bundle exec rake db:version; do
-  >&2 echo "Waiting for postgres to initialize..."
+  >&2 echo "Waiting for mysql to initialize..."
   sleep 1
 done
 

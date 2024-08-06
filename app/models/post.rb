@@ -32,7 +32,7 @@ class Post < ApplicationRecord
     def search_by_name_or_description(s)
       s = s || ''
       s = sanitize_sql_like(s)
-      where("posts.title ILIKE ? OR posts.description ILIKE ?", "%#{s}%", "%#{s}%")
+      where("LOWER(posts.title) LIKE LOWER(?) OR LOWER(posts.description) LIKE LOWER(?)", "%#{s}%", "%#{s}%")
     end
 
     def order_by(sort_by)
